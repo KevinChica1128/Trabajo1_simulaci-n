@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.23)  14 APR 2018 11:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.23)  14 APR 2018 17:07
 entering extended mode
 **"./Trabajo1 Informe.tex"
 ("Trabajo1 Informe.tex"
@@ -293,8 +293,8 @@ Package: harvard
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )))
 ("Trabajo1 Informe.aux"
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
 )
 \openout1 = `"Trabajo1 Informe.aux"'.
 
@@ -398,41 +398,41 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 <FigurasUV/4.pdf, id=1, 1027.84pt x 545.03625pt>
 File: FigurasUV/4.pdf Graphic file (type pdf)
  <use FigurasUV/4.pdf>
-Package pdftex.def Info: FigurasUV/4.pdf used on input line 147.
+Package pdftex.def Info: FigurasUV/4.pdf used on input line 152.
 (pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
 
-Overfull \hbox (7.27965pt too wide) in paragraph at lines 147--148
+Overfull \hbox (7.27965pt too wide) in paragraph at lines 152--153
  [][] 
  []
 
-
-LaTeX Warning: Citation 'Behar' on page 1 undefined on input line 159.
-
-
-LaTeX Warning: Citation 'supuestos' on page 1 undefined on input line 160.
-
-
-LaTeX Warning: Citation 'Reg' on page 1 undefined on input line 161.
-
-
-LaTeX Warning: Citation 'F' on page 1 undefined on input line 162.
-
-No file "Trabajo1 Informe".bbl.
 [1
 
 {C:/Users/KEVINSTEVEN/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+
+LaTeX Warning: Citation 'Behar' on page 2 undefined on input line 164.
+
+
+LaTeX Warning: Citation 'supuestos' on page 2 undefined on input line 165.
+
+
+LaTeX Warning: Citation 'Reg' on page 2 undefined on input line 166.
+
+
+LaTeX Warning: Citation 'F' on page 2 undefined on input line 167.
+
+No file "Trabajo1 Informe".bbl.
 [2 <./FigurasUV/4.pdf>] ("Trabajo1 Informe.aux"
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 5268 strings out of 493334
- 73008 string characters out of 3139234
- 144715 words of memory out of 3000000
- 8688 multiletter control sequences out of 15000+200000
+ 5271 strings out of 493334
+ 73044 string characters out of 3139234
+ 146715 words of memory out of 3000000
+ 8691 multiletter control sequences out of 15000+200000
  19575 words of font info for 58 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
- 43i,8n,40p,361b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,8n,40p,1289b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\
 dpi600\eccc0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
 our\jknappen\ec\dpi600\ecti0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\
@@ -447,11 +447,12 @@ ata\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\
 KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm090
 0.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
 c\dpi600\ecbx0900.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "Trabajo1 Informe.pdf" (2 pages, 108452 bytes).
+m/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "Trabajo1 Informe.pdf" (2 pages, 123578 bytes).
 PDF statistics:
- 296 PDF objects out of 1000 (max. 8388607)
+ 312 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
