@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.23)  13 APR 2018 22:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.23)  14 APR 2018 10:26
 entering extended mode
 **./Trabajo1.tex
 (Trabajo1.tex
@@ -1109,8 +1109,20 @@ Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
-))
-No file Trabajo1.aux.
+)) (Trabajo1.aux
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
+
+
+LaTeX Warning: Label `fig:Densidad' multiply defined.
+
+
+LaTeX Warning: Label `fig:Densidad' multiply defined.
+
+
+LaTeX Warning: Label `fig:Densidad' multiply defined.
+
+)
 \openout1 = `Trabajo1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -1127,6 +1139,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1203,6 +1216,8 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 17.
 LaTeX Info: Redefining \pageref on input line 17.
 LaTeX Info: Redefining \nameref on input line 17.
+
+(Trabajo1.out) (Trabajo1.out)
 \@outlinefile=\write5
 \openout5 = `Trabajo1.out'.
 
@@ -1290,133 +1305,63 @@ Dictionary: translator-theorem-dictionary, Language: English
 LaTeX Info: Redefining \includegraphics on input line 17.
 LaTeX Info: Redefining \. on input line 17.
 LaTeX Info: Redefining \% on input line 17.
+ (Trabajo1.nav)
+Overfull \hbox (116.3166pt too wide) in paragraph at lines 17--17
+ [][][][]  
+ []
 
-No file Trabajo1.nav.
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 21.
 
+
+Overfull \hbox (116.3166pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
 [1
 
 {C:/Users/KEVINSTEVEN/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Overfull \hbox (116.3166pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
 [2
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 37.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 37.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 37.
-
-(C:\Users\KEVINSTEVEN\AppData\Roaming\MiKTeX\2.9\tex\latex\sansmathaccent\ot1ma
-thkerncmss.fd
-File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
-thkerncmss.
-)
-Overfull \hbox (7.04706pt too wide) detected at line 37
-\OT1/mathkerncmss/m/sl/12 Y \OT1/cmss/m/n/12 = 57720[]52 + 24261[]20\OT1/mathke
-rncmss/m/sl/12 X[] \OT1/cmss/m/n/12 + 3443[]94\OT1/mathkerncmss/m/sl/12 X[] \OT
-1/cmss/m/n/12 + 19[]09\OT1/mathkerncmss/m/sl/12 X[] \OMS/cmsy/m/n/12   \OT1/cms
-s/m/n/12 67[]72\OT1/mathkerncmss/m/sl/12 X[] \OMS/cmsy/m/n/12   \OT1/cmss/m/n/1
-2 121[]66\OT1/mathkerncmss/m/sl/12 X[]
+Overfull \hbox (116.3166pt too wide) has occurred while \output is active
+ [][][][]  
  []
 
 [3
 
-] [4
-
-] [5
-
-] [6
-
-] [7
-
-] [8
-
-] [9
-
-] [10
-
 ]
-<imagenes/correlograma.pdf, id=292, 1027.84pt x 545.03625pt>
-File: imagenes/correlograma.pdf Graphic file (type pdf)
-
-<use imagenes/correlograma.pdf>
-Package pdftex.def Info: imagenes/correlograma.pdf used on input line 115.
-(pdftex.def)             Requested size: 335.7426pt x 178.03287pt.
-
-Overfull \vbox (3.98021pt too high) detected at line 115
+Overfull \hbox (116.3166pt too wide) has occurred while \output is active
+ [][][][]  
  []
 
-[11
-
- <./imagenes/correlograma.pdf>] [12
-
-] [13
+[4
 
 ]
-<imagenes/rachas.png, id=380, 285.31593pt x 63.23625pt>
-File: imagenes/rachas.png Graphic file (type png)
-
-<use imagenes/rachas.png>
-Package pdftex.def Info: imagenes/rachas.png used on input line 153.
-(pdftex.def)             Requested size: 284.52756pt x 63.06143pt.
-pdfTeX warning (ext4): destination with the same identifier (name{fig:Densidad}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.153 \end{frame}
-                 
-Overfull \vbox (5.00877pt too high) detected at line 153
+Overfull \hbox (116.3166pt too wide) has occurred while \output is active
+ [][][][]  
  []
 
-[14
-
- <./imagenes/rachas.png>]
-Overfull \vbox (2.33325pt too high) detected at line 163
- []
-
-[15
-
-] [16
-
-] <imagenes/durbin.png, id=464, 322.95656pt x 60.225pt>
-File: imagenes/durbin.png Graphic file (type png)
-
-<use imagenes/durbin.png>
-Package pdftex.def Info: imagenes/durbin.png used on input line 187.
-(pdftex.def)             Requested size: 284.52756pt x 53.06155pt.
-pdfTeX warning (ext4): destination with the same identifier (name{fig:Densidad}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.187 \end{frame}
-                  [17
-
- <./imagenes/durbin.png>] [18
-
-] [19
+[5
 
 ]
-<imagenes/box.png, id=545, 286.82156pt x 48.18pt>
-File: imagenes/box.png Graphic file (type png)
- <use imagenes/box.png>
-Package pdftex.def Info: imagenes/box.png used on input line 216.
-(pdftex.def)             Requested size: 284.52756pt x 47.79535pt.
-pdfTeX warning (ext4): destination with the same identifier (name{fig:Densidad}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.216 \end{frame}
-                  [20
+Overfull \hbox (116.3166pt too wide) has occurred while \output is active
+ [][][][]  
+ []
 
- <./imagenes/box.png>] [21
+[6
+
+]
+Overfull \hbox (116.3166pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[7
 
 ]
 \tf@nav=\write6
@@ -1428,57 +1373,46 @@ l.216 \end{frame}
 \tf@snm=\write8
 \openout8 = `Trabajo1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
  (Trabajo1.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
+Package rerunfilecheck Info: File `Trabajo1.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
-
-Package rerunfilecheck Warning: File `Trabajo1.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Trabajo1.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 53.
  ) 
 Here is how much of TeX's memory you used:
- 17855 strings out of 493334
- 340193 string characters out of 3139234
- 420071 words of memory out of 3000000
- 20918 multiletter control sequences out of 15000+200000
- 10990 words of font info for 40 fonts, out of 3000000 for 9000
+ 17711 strings out of 493334
+ 336393 string characters out of 3139234
+ 417617 words of memory out of 3000000
+ 20822 multiletter control sequences out of 15000+200000
+ 5451 words of font info for 20 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,17n,57p,907b,581s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Trabajo1.pdf (21 pages, 299572 bytes).
+ 56i,17n,55p,413b,581s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Navigation8} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation21} has been referenced but does not exis
+t, replaced by a fixed one
+
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb>
+Output written on Trabajo1.pdf (7 pages, 77256 bytes).
 PDF statistics:
- 658 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
- 87 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 224 PDF objects out of 1000 (max. 8388607)
+ 17 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
