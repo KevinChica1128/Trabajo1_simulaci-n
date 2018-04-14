@@ -1,0 +1,4 @@
+#Distribución Poisson:
+
+
+#Distribución Logistic:
