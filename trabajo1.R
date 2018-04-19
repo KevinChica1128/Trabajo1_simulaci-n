@@ -12,7 +12,7 @@ nsim=10000
 P <- rpois(nsim, 1.99)
 
 
-# Transformacion #
+# Método de la convolución #
 x=0
 t=0
 X <- rexp(nsim,1/1.99)
@@ -37,7 +37,7 @@ qplot(P, main="Distribucion Poisson para Riesgo Sismico",
 # M. tradicional #
 L <- rlogis(nsim, 3,4)
 
-# Transformacion #
+# Transformada Inversa #
 a=3
 b=4
 U <- runif(nsim,0,1)
@@ -51,8 +51,12 @@ qplot(X, main="Transformacion Distribucion Logistica", col=I("black"), fill=I("g
 
 
 #Grafico#
+x11()
 par(mfrow=c(1,2))
 hist((L), main="Logic Tradicional", freq=F, xlab="", yalb="", col="magenta1", bty="n")
 hist((X), main="Logic Transformacion", freq=F, xlab="", yalb="", col="purple1", bty="n") 
 
+
+#Generación variable de respuesta Y:
+Y<-c(rep(0,7000),rep(1,7000)) #0:Clientes malos 1:Clientes buenos
 
