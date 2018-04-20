@@ -29,6 +29,7 @@ for (j in 1:N) {
 }
 
 #Grafico#
+x11()
 par(mfrow=c(1,2))
 barplot(table(RP), main="Poisson(1.99) en R", xlab="Magnitud", ylab="")
 barplot(table(X), main="Poisson(1.99) con el metodo propio", xlab="Magnitud", ylab="")

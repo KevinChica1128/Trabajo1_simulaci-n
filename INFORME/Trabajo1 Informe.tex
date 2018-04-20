@@ -149,6 +149,45 @@ de grado.tex}) and can be used as a guideline just replacing its contents. It is
 \end{itemize}
 
 \section{Simulación de variables aleatorias}
+\subsection{Introducción}
+~\\En esta sección se mostrarán los resultados de las simulaciones de ambas distribuciones (Poisson y Logistica) donde la Poisson se simuló por medio del método propio y la Logistic se simuló por medio de la transformada inversa, Se comparará gráficamente y con pruebas estadísticas como la kolmogorov y la $\chi^2$, si los métodos de simulación de verdad simulan las variables aleatorias que queremos. Posteriormente, se concluirá acerca de los métodos de simulación usados teniendo en cuenta los resultados de la prueba y el contexto en el que se utiliza la distribución en los artículos seleccionados.
+
+\subsection{Descripción general de las distribuciones y las pruebas de bondad de ajuste utilizadas}
+\subsubsection{Distribución Poisson}
+~\\  Esta distribuci\'{o}n es una de las más importantes distribuciones de variable discreta. Sus principales aplicaciones hacen referencia a la modelizaci\'{o}n de situaciones en las que nos interesa determinar el n\'{u}mero de hechos de cierto tipo que se pueden producir en un intervalo de tiempo o de espacio, bajo presupuestos de aleatoriedad.
+~\\ Su funci\'{o}n de densidad esta dada por: 
+~\\$$f(x,\lambda)=\frac{e^{-\lambda}\cdot \lambda^x}{x!}  ; x \in \{0,1,2,3,...\}$$
+~\\En este caso, el artículo trata de modelar el riesgo sísmico en un año, definiendo riesgo sísmico como la tasa anual de un movimiento de tierra dado de excedencia. Por lo anterior se plantea esta distribución ara modelar este fenómeno, ya que se trata de determinar el número de hechos de cierto tipo (en este caso de movimientos de tierra) que se producen en un intervalo de tiempo o de espacio (en este caso es acotado por un año).
+\subsubsection{Distribución Logística}
+
+\subsubsection{Pruebas de bondad de ajuste}
+~\\Las pruebas de bondad de ajuste tienen por objetivo determinar si los datos se ajustan a una determinada distribución de probabilidad, esta distribución puede estar completamente especificada o perteneciente a una clase paramétrica.Para la bondad de ajuste de los datos a una distribución fija dada, los contrastes básicos son el $\chi^2$ de Pearson y el de Kolmogorov-smirnov.
+\subsubsection*{Prueba $\chi^2$ de Pearson:}
+~\\ \textbf{Esta prueba plantea las hipotesis:}
+$$H_{0}:f(x,\theta)=f_{0}(x,\theta)$$
+$$H_{1}:f(x,\theta)\neq f_{0}(x,\theta) $$
+~\\ \textbf{El estadístico de prueba es:} $\chi_{obs}^{2}=\sum\limits_{i=1}^{k}\frac{(f_{i}-np_{i})^2}{np_{i}}=\sum\limits_{i=1}^{k}\frac{(O_{i}-E_{i})^2}{E_{i}}$
+~\\Si n $\infty$, $(np_{i}>5)$, es la verdadera distribución (sin parámetros desconocidos), tiene una distrinución Chi-Cuadrado con k-m-1 grados de libertad. Donde k:Número de categorías mutuamente excluyentes, y m: Número de parámetros del modelo o distribución.
+~\\ \textbf{La regla de decisión esta dada por:} Para un nivel de significancia de $\alpha$ se halla el valor $\chi_{1-\alpha,k-1}^{2}$ a partir de $P(\chi^{2}>\chi_{1-\alpha,k-m-1}^{2})=\alpha$
+~\\Si $\chi_{Obs}^{2}>\chi_{1-\alpha,k-1}^{2}$ se rechaza la hipótesis nula $H_{0}$
+\subsubsection*{Prueba Kolmogorov-Smirnov:}
+~\\Esta prueba, al igual que la anterior, sirve para probar si una muestra o un conjunto de datos tienen o siguen una distribución hipotetica.
+~\\Se plantean las siguientes hipótesis:
+$$H_{0}: F(x,\theta)=F_{0}(x,\theta) $$ 
+$$H_{1}: F(x,\theta)\neq F_{0}(x,\theta)  $$
+~\\ \textbf{Estadístico de prueba:}Sea $F_{n}(x)$ la función de distribución empirica basada en las muestra aleatoria $x_{1},x_{2},...,x_{n}$, el estadistico de prueba para la hipotesis planteada es:
+$$T=sup|F_{n}(x)-F_{0}(x)|$$
+~\\ \textbf{Región de rechazo:}$R_{c}=T|T>W_{1-\alpha}$, donde $W_{1-\alpha}$ es calculada de la tabla de valores críticos.
+
+\subsection{Simulación de las observaciones:}
+\subsubsection{Distribución Poisson:}
+~\\Recordemos que el parámetro sobre el cuál se van a generar las observaciones es $\lambda=1.99$ que es la tasa o el número esperado de movimientos sísmicos durante un año. La generación de estos números se hizo por el método de
+\subsubsection{Distribución Logística:}
+~\\Con esta distribución, se buscó generar las probabilidades de ser un buen cliente dadas unas características (variables independientes del modelo) de cada una de las 14000 personas en cuestión, es decir, se generaron 14000 valores entre 0 y 1 que representan tales probabilidades.
+
+
+
+\newpage\subsection{Resultados}
 \begin{figure}[!htb]
   \centering
   \includegraphics[scale=0.35]{FigurasUV/Rplot1.png}
@@ -156,15 +195,9 @@ de grado.tex}) and can be used as a guideline just replacing its contents. It is
 \end{figure}
 ~\\ 
 
-\section{Pruebas de bondad de ajuste}
 
-
-\section{Resultados}
-
-
-
-\section{Conclusiones}
-\section{Bibliografía}
+\subsection{Conclusiones}
+\subsection{Bibliografía}
 
 
 
