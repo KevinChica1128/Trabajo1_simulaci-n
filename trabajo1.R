@@ -8,9 +8,10 @@ suppressMessages(library(ggplot2))
 #-----------------------------------#
 # Distribucion Poisson:
 #-----------------------------------#
-# Poisson con R #
 nsim=10000
-l=1.99
+l=1.99 #Parametro del articulo, Media de terremotos por a??o.
+
+# Poisson con R #
 RP <- rpois(nsim,l)
 
 # Poisson con metodo propio #
@@ -32,7 +33,8 @@ par(mfrow=c(1,2))
 barplot(table(RP), main="Poisson(1.99) en R", xlab="Magnitud", ylab="")
 barplot(table(X), main="Poisson(1.99) con el metodo propio", xlab="Magnitud", ylab="")
 
-
+qplot(RP,main="Poisson(1.99) en R, tasa media terremotos", col=I("black"), fill=I("grey"))
+qplot(X,main="Poisson(1.99) con el metodo propio, tasa media terremotos", col=I("black"), fill=I("grey"))
 #-----------------------------------#
 #Distribucion Logistic:
 #-----------------------------------#
