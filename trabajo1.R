@@ -8,25 +8,31 @@ nsim=10000
 #-----------------------------------#
 #Distribucion Poisson:
 #-----------------------------------#
-# M. tradicional #
-P <- rpois(nsim, 1.99)
+#Poisson con R:
+Z<-rpois(1000,l)
+t<-table(Z)
 
-
-# Método de la convolución #
-x=0
-t=0
-X <- rexp(nsim,1/1.99)
-t=t+X
-
-for (x in t) {
-  
+#Poisson con método propio:
+l=5
+N=1000
+X<-c()
+for (j in 1:N) {
+  U<-runif(1)
+  i=0 ; F=P=exp(-l)
+  while (U>=F) {
+    P=(l/(i+1))*P
+    F=F+P
+    i=i+1
+  }
+  X[j]=i
 }
-Y = -(1/1.99)*(log(E))
+q<-table(X)
 
-#Grafico#
-barplot(table(P), xlab="Magnitud", ylab="Tasa de Terremotos", main="Probabilidad de Riesgo Sismico")
-qplot(P, main="Distribucion Poisson para Riesgo Sismico", 
-      xlab="Magnitud", ylab="Tasa de Terremotos", col=I("black"),fill=I("red")) 
+#Gráfico:
+x11()
+par(mfrow=c(1,2))
+plot(t,type="h",main="Poisson(5) en R")
+plot(q,type="h",main="Poisson(5) con el método propio")
 
 
 
