@@ -4,17 +4,17 @@
 # Simulacion Estadistica Trabajo 1
 #-----------------------------------#
 suppressMessages(library(ggplot2))
-nsim=10000
-#-----------------------------------#
-#Distribucion Poisson:
-#-----------------------------------#
-#Poisson con R:
-Z<-rpois(1000,l)
-t<-table(Z)
 
-#Poisson con método propio:
-l=5
-N=1000
+#-----------------------------------#
+# Distribucion Poisson:
+#-----------------------------------#
+# Poisson con R #
+nsim=10000
+l=1.99
+RP <- rpois(nsim,l)
+
+# Poisson con metodo propio #
+N=nsim
 X<-c()
 for (j in 1:N) {
   U<-runif(1)
@@ -26,15 +26,11 @@ for (j in 1:N) {
   }
   X[j]=i
 }
-q<-table(X)
 
-#Gráfico:
-x11()
+#Grafico#
 par(mfrow=c(1,2))
-plot(t,type="h",main="Poisson(5) en R")
-plot(q,type="h",main="Poisson(5) con el método propio")
-
-
+barplot(table(RP), main="Poisson(1.99) en R", xlab="Magnitud", ylab="")
+barplot(table(X), main="Poisson(1.99) con el metodo propio", xlab="Magnitud", ylab="")
 
 
 #-----------------------------------#
@@ -63,6 +59,6 @@ hist((L), main="Logic Tradicional", freq=F, xlab="", yalb="", col="magenta1", bt
 hist((X), main="Logic Transformacion", freq=F, xlab="", yalb="", col="purple1", bty="n") 
 
 
-#Generación variable de respuesta Y:
+#Generaci?n variable de respuesta Y:
 Y<-c(rep(0,7000),rep(1,7000)) #0:Clientes malos 1:Clientes buenos
 
