@@ -61,6 +61,6 @@ hist((L), main="Logic Tradicional", freq=F, xlab="", yalb="", col="magenta1", bt
 hist((X), main="Logic Transformacion", freq=F, xlab="", yalb="", col="purple1", bty="n") 
 
 
-#Generaci?n variable de respuesta Y:
-Y<-c(rep(0,7000),rep(1,7000)) #0:Clientes malos 1:Clientes buenos
+#Generacion variable de respuesta Y:
+Y<-c(rep(0,7000),rep(1,7000)) # 0:Clientes malos, 1:Clientes buenos
 
