@@ -35,6 +35,7 @@ barplot(table(X), main="Poisson(1.99) con el metodo propio", xlab="Magnitud", yl
 
 qplot(RP,main="Poisson(1.99) en R, tasa media terremotos", col=I("black"), fill=I("grey"))
 qplot(X,main="Poisson(1.99) con el metodo propio, tasa media terremotos", col=I("black"), fill=I("grey"))
+
 #-----------------------------------#
 #Distribucion Logistic:
 #-----------------------------------#
