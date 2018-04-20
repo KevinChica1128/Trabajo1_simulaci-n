@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.23)  17 APR 2018 21:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.9.23)  19 APR 2018 22:19
 entering extended mode
 **"./Trabajo1 Informe.tex"
 ("Trabajo1 Informe.tex"
@@ -397,17 +397,22 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
  [1
 
 {C:/Users/KEVINSTEVEN/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<FigurasUV/4.pdf, id=17, 1027.84pt x 545.03625pt>
-File: FigurasUV/4.pdf Graphic file (type pdf)
- <use FigurasUV/4.pdf>
-Package pdftex.def Info: FigurasUV/4.pdf used on input line 161.
-(pdftex.def)             Requested size: 462.52373pt x 245.26405pt.
+<FigurasUV/Rplot1.png, id=17, 1348.03625pt x 711.65875pt>
+File: FigurasUV/Rplot1.png Graphic file (type png)
 
-Overfull \hbox (7.27965pt too wide) in paragraph at lines 161--162
+<use FigurasUV/Rplot1.png>
+Package pdftex.def Info: FigurasUV/Rplot1.png used on input line 154.
+(pdftex.def)             Requested size: 471.81976pt x 249.08429pt.
+
+Overfull \hbox (16.57568pt too wide) in paragraph at lines 154--155
  [][] 
  []
 
 [2]
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
 
 LaTeX Warning: Citation 'Behar' on page 3 undefined on input line 173.
 
@@ -421,13 +426,13 @@ LaTeX Warning: Citation 'Reg' on page 3 undefined on input line 175.
 LaTeX Warning: Citation 'F' on page 3 undefined on input line 176.
 
 No file "Trabajo1 Informe".bbl.
-[3 <./FigurasUV/4.pdf>] ("Trabajo1 Informe.aux"
+[3 <./FigurasUV/Rplot1.png>] ("Trabajo1 Informe.aux"
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 5272 strings out of 493334
- 73063 string characters out of 3139234
+ 5273 strings out of 493334
+ 73092 string characters out of 3139234
  150715 words of memory out of 3000000
  8692 multiletter control sequences out of 15000+200000
  19575 words of font info for 58 fonts, out of 3000000 for 9000
@@ -449,12 +454,14 @@ KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm090
 c\dpi600\ecbx0900.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "Trabajo1 Informe.pdf" (3 pages, 147246 bytes).
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb>
+Output written on "Trabajo1 Informe.pdf" (3 pages, 193447 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
+ 349 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
