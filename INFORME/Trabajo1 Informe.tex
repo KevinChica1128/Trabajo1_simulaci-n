@@ -48,7 +48,7 @@ year = 2018]
 % "secondtitle = " título del artículo traducido al idioma alterno
 % "shorttitle = " título corto (opcional) para el encabezado
 % **** --------------------------------------------------------------------------------
-\title[maintitle ={Generación de números aleatorios, modelos probabilisticos y pruebas de bondad de ajuste},
+\title[maintitle ={GENERACION DE NUMEROS ALEATORIOS, MODELOS PROBABILISTICOS Y PRUEBAS DE BONDAD DE AJUSTE},
        %secondtitle = Template for report in a course,
        shorttitle = Generacion de numeros aleatorios y pruebas de bondad]
 % //// --------------------------------------------------------------------------------
@@ -67,7 +67,7 @@ year = 2018]
         code = Código: 1533173,
         email = kevin.chica@correounivalle.edu.co,
 ]
-\author[firstname = Cesar,
+\author[firstname = Cesar Andres,
         surname = Saavedra,
         code = Código: 1628466,
         email = cesar.saavedra@correounivalle.edu.co
@@ -132,38 +132,42 @@ de grado.tex}) and can be used as a guideline just replacing its contents. It is
 \begin{itemize}
 \item Distribución Poisson
 \item[-]\textbf{Pruebas de apoyo al riesgo sísmico tras la distribución Poisson:}
-~\\Este artículo trata de modelar el riesgo sísmico con una distribución Poisson y así lograr estimar la probabilidad de amenaza sísmica, esto con el fin de mitigar el riesgo de terremoto ya que estos no son predecibles. Primero debemos definir riesgo sísmico: en lugar de pérdidas económicas o bajas asociadas a terremotos, el riesgo sísmico se refiere a la tasa anual de un movimiento de tierra dado de excedencia.
-~\\A diferencia de la frecuencia de terremotos que se demostró siguiendo la distribución Poisson, se asume que el riesgo sísmico(la tasa anual de movimientos sísmicos del suelo) es el mismo tipo de variables aleatorias sin soporte tangible. En lugar de utilizar los algoritmos de probabilidad total empleados actualmente, este estudio aplicó la simulación Monte Carlo (MCS) para obtener la función de probabilidad de riesgo sísmico y luego la comparó con la distribución Poisson para ver si realmente está cerca de la predicción del modelo como se suponía. Sobre la base de un cálculo de referencia, el análisis muestra un buen acuerdo entre los dos, proporcionando por primera vez  algunas pruebas de que el riesgo sísmico debería seguir  la distribución Poisson. Para este articulo se utiliza una tasa media de 1.99 terremotos por año, es decir, nuestro parámetro para obtener las simulaciones va a ser $\lambda=1.99$.
-~\\Para cumplir con el objetivo del articulo se generaron aleatoriamente valores correspondientes a 4 parámetros de terremoto, que son la magnitud, la distancia, la frecuencia, y el error del modelo y se evaluaron en una ecuación denominada ecuación de predicción de movimiento de tierra, que es un modelo de regresión que describe la correlación entre el movimiento del suelo, la magnitud y la distancia combinadas, obteniendo así valores al azar para las evaluaciones del riesgo sismico. Posteriormente, mediante la repetición de los cálculos para una serie de ensayos, se obtuvieron muchas muestras de peligro o riesgo sísmico, y luego se calculo el valor medio como las estimaciones de riesgo finales con el MCS. Para el método de Monte Carlo se sabe que es mucho más eficiente con un tamaño de muestra grande, en este articulo se tomaron 10000 repeticiones. Finalmente, con un número de muestras de peligro sísmico de simulación de Monte Carlo, los análisis estadísticos (pruebas de bondad de ajuste) atestiguan que su función de probabilidad debe seguir la distribución de Poisson, proporcionando evidencia tangible por primera vez en apoyo de esta presunción de ingeniería que se ha utilizado comúnmente en los análisis de terremotos. 
+~\\Este artículo trata de modelar el riesgo sísmico con una distribución Poisson y así lograr estimar la probabilidad de amenaza sísmica, buscando evaluar el riesgo de variables no predecibles, como los terremotos. Primero es necesario hacer un acercamiento a la definición de riesgo sísmico, el cual, en contraste a definiciones de índole económica o a bajas asociadas, se refiere a la tasa anual de un movimiento de tierra dado de excedencia.
+~\\A diferencia de la frecuencia de terremotos que se demostró siguiendo la distribución Poisson, se asume que el riesgo sísmico (la tasa anual de movimientos sísmicos del suelo) es el mismo tipo de variables aleatorias sin soporte tangible. En lugar de utilizar los algoritmos de probabilidad total empleados actualmente, este estudio aplicó la simulación Monte Carlo (MCS) para obtener la función de probabilidad de riesgo sísmico y luego la comparó con la distribución Poisson para ver si realmente está cerca de la predicción del modelo como se suponía. 
+Sobre la base de un cálculo de referencia, el análisis muestra un buen acuerdo entre los dos, proporcionando por primera vez algunas pruebas de que el riesgo sísmico debería seguir la distribución Poisson. Para este artículo se utiliza una tasa media de 1.99 terremotos por año, es decir, el parámetro para obtener las simulaciones va a ser $\lambda=1.99$.
+~\\Para cumplir con el objetivo del artículo se generaron aleatoriamente valores correspondientes a 4 parámetros de terremoto, que son: la magnitud, la distancia, la frecuencia, y el error del modelo. Los valores generados se evaluaron en una ecuación denominada ?ecuación de predicción de movimiento de tierra?; esta ecuación es un modelo de regresión que describe la correlación entre el movimiento del suelo, la magnitud y la distancia combinadas, obteniendo así valores al azar para las evaluaciones del riesgo sísmico. Posteriormente, mediante la repetición de los cálculos para una serie de ensayos, se obtuvieron múltiples muestras de peligro o riesgo sísmico y luego se calculó el valor medio como las estimaciones de riesgo finales con el MCS. La eficiencia del método Monte Carlo se ve en gran medida aumentada en estudios donde el tamaño de la muestra es considerablemente grande, en el artículo se tomaron 10000 repeticiones. Finalmente, con un número de muestras de peligro sísmico de simulación de Monte Carlo, los análisis estadísticos (pruebas de bondad de ajuste) atestiguan que su función de probabilidad debe seguir la distribución de Poisson, proporcionando evidencia tangible por primera vez en apoyo de esta presunción de ingeniería que se ha utilizado comúnmente en los análisis de terremotos.
 
 
 ~\item Distribución Logística
 \item[-]\textbf{Aplicación de la regresión logística y de los algoritmos genéticos en el análisis del riesgo de crédito:}
-~\\Este articulo nos presenta el uso de la regresión logistica y algoritmos genéticos para la clasificación de buenos y malos pagadores en financiamientos bancarios y la identificación del mejor modelo en términos de calidad de ajuste. A partir de una muestra de 14.000 datos, suministrada por una gran institución financiera brasileña, se aplicaron las dos tecnicas. La regresión logistica presentó un mejor ajuste a los datos. Este estudio ilustró los procedimientos que una empresa puede adoptar para identificar el mejor modelo de concesión de créditos o prestamos, a partir del cual es posible dirigir la estrategia de la institución en el proceso de evaluación de solicitudes de prestamos bancarios.
-~\\Los modelos de crédito son utilizados por las instituciones financieras en general y especificamente por los bancos con algunas finalidades: reducir los costos del proceso de concesión de crédito; reducir el aumento de no recibir el valor concedido; mejorar el proceso de decisión de crédito y reducir el tiempo y el esfuerzo empleado en esa actividad. Los modelos de acreditación son especificos para la aprobación en cada producto de crédito. Los productos de crédito pueden ser: crédito personal, cheque especial, financiaciones, entre otros. En este estudio, el producto en cuestión es el crédito personal.
-~\\El punto principal para la concesión de crédito es la evaluación del riesgo. Si el riesgo es mal evaluado, la empresa seguramente perdera dinero, ya sea por la aceptación de clientes malos que generarán perdidas al negocio, o ya sea por el rechazo de clientes buenos que generarían ganancias al negocio.
-~\\Para la realización de este estudio, se proporcionó información sobre la historia de los clientes que han contratado un crédito personal con una institución financiera, de todos estos clientes se seleccionaron al azar 7000 clientes buenos y 7000 clientes considerados malos. En el trabajo la muestra se divide en dos submuestras del mismo universo de interés: uno para la construcción del modelo, 8.000 datos (siendo 4.000 bueno y 4.000 malo) y otro para validación del modelo construido, 6.000 datos (siendo 3.000 bueno y 3.000 malo). La submuestra de construcción modelo se utiliza para la estimación de los parámetros del modelo y la submuestra de validación tiene como función para verificar la potencia de predicción de los modelos construidos. 
-~\\Para la construcción del modelo se consideraron las siguientes variables explicativas (relacionadas con el perfil del cliente) y el uso y restricción (relacionados con restricciones de crédito y notas sobre otras operaciones de crédito al cliente): sexo, estado civil, teléfono en casa, teléfono Comercial, tiempo en el trabajo actual, salario del cliente, cantidad de parcelas a pagar, primera adquisición, tiempo en la residencia actual, importe de la parcela, valor total del préstamo, tipo de crédito, edad, CEP residencial, CEP comercial, código de profesión, nombre de la profesión, salario del cónyuge.72 categorías de las variables originales fueron obtenidas para ser utilizadas en la construcción de los modelos.
-~\\Las variables independientes enfocadas en este estudio fueron codificadas en forma de variables Dummies. Para cada variable el número de categorías (k) determinó el número de variables Dummies (k-1) incluidas en el procesamiento de la regresión logística. El procedimiento empleado para la inclusión de variables independientes en el modelo logístico fue el avance gradual. En los modelos de paso hacia adelante sólo se inicia con el término de la constante, excepto cuando se omite este parámetro en la especificación de modelado, y en cada etapa se introduce la variable con el nivel de significancia más bajo para la puntuación estadística, siempre que se trata de menos que un valor de remoción (corte), establecido en 0,05 en este trabajo.
-~\\entonces se establece que la probabilidad de que el cliente sea un buen pagador se da, según el modelo logístico, por: $p=\frac{e^{Z}}{1+e^{Z}}$
-~\\Considerando k-1 Dummies para cada variable de nivel k, se generaron 53 variables independientes, de las cuales 28 se incluyeron en el modelo. En este estudio, Z es la combinación lineal de las 28 variables independientes ponderadas por los coeficientes logísticos.
+~\\Este artículo presenta el uso de la regresión logística y algoritmos genéticos para la clasificación de buenos y malos pagadores en financiamientos bancarios y la identificación del mejor modelo en términos de calidad de ajuste. A partir de una muestra de 14.000 datos, suministrada por una gran institución financiera brasileña, se aplicaron las dos técnicas señaladas con anterioridad, donde se obtuvo como conclusión importante que la regresión logística presentó un mejor ajuste a los datos. Este estudio ilustró los procedimientos que una empresa puede adoptar para identificar el mejor modelo de concesión de créditos o prestamos, a partir del cual es posible dirigir la estrategia de la institución en el proceso de evaluación de solicitudes de préstamos bancarios.
+
+~\\Los modelos de crédito son utilizados por las instituciones financieras en general y específicamente por los bancos con algunas finalidades: reducir los costos del proceso de concesión de crédito, reducir el aumento de no recibir el valor concedido, mejorar el proceso de decisión de crédito y reducir el tiempo y el esfuerzo empleado en esta actividad. Los modelos de acreditación son específicos para la aprobación en cada producto de crédito y estos a su vez pueden ser de diferentes tipos como: crédito personal, cheque especial, financiaciones, entre otros. En el estudio presentado en el artículo, el producto en cuestión es el crédito personal.
+~\\El punto principal para la concesión de crédito es la evaluación del riesgo. Si el riesgo es mal evaluado, la empresa seguramente perderá dinero, ya sea por la aceptación de clientes malos que generarán perdidas al negocio, o ya sea por el rechazo de clientes buenos que generarían ganancias al negocio.
+~\\Para la realización del estudio se proporcionó información sobre la historia de los clientes que han contratado un crédito personal con una institución financiera, de todos estos clientes seleccionaron al azar 7000 clientes buenos y 7000 clientes considerados malos. En el artículo la muestra se divide en dos submuestras del mismo universo de interés: uno para la construcción del modelo con 8.000 datos (siendo 4.000 buenos y 4.000 malos) y otro para validación del modelo construido con 6.000 datos (siendo 3.000 buenos y 3.000 malos). La submuestra de construcción de modelo se utiliza para la estimación de los parámetros del modelo y la submuestra de validación fue usada para verificar la potencia de predicción de los modelos construidos. 
+~\\Para la construcción del modelo se consideraron las siguientes variables explicativas (relacionadas con el perfil del cliente) y el uso y restricción (relacionados con restricciones de crédito y notas sobre otras operaciones de crédito al cliente): sexo, estado civil, teléfono en casa, teléfono Comercial, tiempo en el trabajo actual, salario del cliente, cantidad de parcelas a pagar, primera adquisición, tiempo en la residencia actual, importe de la parcela, valor total del préstamo, tipo de crédito, edad, CEP residencial, CEP comercial, código de profesión, nombre de la profesión, salario del cónyuge. Como resultado 72 categorías de las variables originales fueron obtenidas para ser utilizadas en la construcción de los modelos. 
+~\\Las variables independientes enfocadas en el este estudio fueron codificadas en forma de variables Dummies. Para cada variable el número de categorías (k) determinó el número de variables Dummies (k-1) incluidas en el procesamiento de la regresión logística. El procedimiento empleado para la inclusión de variables independientes en el modelo logístico fue el avance gradual. En los modelos de paso hacia adelante sólo se inicia con el término de la constante, excepto cuando se omite este parámetro en la especificación de modelado y en cada etapa se introduce la variable con el nivel de significancia más bajo para la puntuación estadística, siempre que se trata de menos que un valor de remoción (corte), establecido en 0,05 en este trabajo. Entonces se establece que la probabilidad de que el cliente sea un buen pagador ocurre, según el modelo logístico, por: $p=\frac{e^{Z}}{1+e^{Z}}$
+
+~\\Considerando (k-1) Dummies para cada variable de nivel k, se generaron 53 variables independientes, de las cuales 28 se incluyeron en el modelo. En este estudio, Z es la combinación lineal de las 28 variables independientes ponderadas por los coeficientes logísticos. 
 ~\\Finalmente, luego de obtener el modelo se evaluó su significancia y se concluyó que el modelo de regresión logística presentó resultados estadísticamente significativos, que refuerzan su idoneidad.
 \end{itemize}
 
 \section{Simulación de variables aleatorias}
 \subsection{Introducción}
-~\\En esta sección se mostrarán los resultados de las simulaciones de ambas distribuciones (Poisson y Logistica) donde la Poisson se simuló por medio del método propio y la Logistic se simuló por medio de la transformada inversa, Se comparará gráficamente y con pruebas estadísticas como la kolmogorov y la $\chi^2$, si los métodos de simulación de verdad simulan las variables aleatorias que queremos. Posteriormente, se concluirá acerca de los métodos de simulación usados teniendo en cuenta los resultados de la prueba y el contexto en el que se utiliza la distribución en los artículos seleccionados.
+~\\En esta sección se evidencian los resultados de las simulaciones de los artículos referenciados en el numeral 1 del presente documento, donde: la distribución Poisson fue simulada por medio del método propio y la distribución Logística se simuló por medio de la transformada inversa. Se comparó si los métodos de simulación de verdad simulaban las variables aleatorias deseadas, esto mediante método gráfico y haciendo uso de pruebas estadísticas de bondad de ajuste como la kolmogorov y la $\chi^2$. Posteriormente, se concluye acerca de los métodos de simulación usados teniendo en cuenta los resultados de la prueba y el contexto en el que se utiliza la distribución en los artículos seleccionados.
 
 \subsection{Descripción general de las distribuciones y las pruebas de bondad de ajuste utilizadas}
 \subsubsection{Distribución Poisson}
-~\\  Esta distribuci\'{o}n es una de las más importantes distribuciones de variable discreta. Sus principales aplicaciones hacen referencia a la modelizaci\'{o}n de situaciones en las que nos interesa determinar el n\'{u}mero de hechos de cierto tipo que se pueden producir en un intervalo de tiempo o de espacio, bajo presupuestos de aleatoriedad.
-~\\ Su funci\'{o}n de densidad esta dada por: 
+~\\  Esta distribución es una de las más importantes distribuciones de variable discreta. Sus principales aplicaciones hacen referencia a la modelización de situaciones en las que interesa determinar el número de hechos de cierto tipo que se pueden producir en un intervalo de tiempo o de espacio, bajo presupuestos de aleatoriedad. Su función de densidad está dada por: 
 ~\\$$f(x,\lambda)=\frac{e^{-\lambda}\cdot \lambda^x}{x!}  ; x \in \{0,1,2,3,...\}$$
-~\\En este caso, el artículo trata de modelar el riesgo sísmico en un año, definiendo riesgo sísmico como la tasa anual de un movimiento de tierra dado de excedencia. Por lo anterior se plantea esta distribución ara modelar este fenómeno, ya que se trata de determinar el número de hechos de cierto tipo (en este caso de movimientos de tierra) que se producen en un intervalo de tiempo o de espacio (en este caso es acotado por un año).
+
+~\\En este caso, el artículo trata de modelar el riesgo sísmico en un año y por tanto se plantea esta distribución para modelar el fenómeno, ya que se trata de determinar el número de hechos de cierto tipo (en este caso de movimientos de tierra) que se producen en un intervalo de tiempo o de espacio (en este caso es acotado por un año).
+
 \subsubsection{Distribución Logística}
 
 \subsubsection{Pruebas de bondad de ajuste}
-~\\Las pruebas de bondad de ajuste tienen por objetivo determinar si los datos se ajustan a una determinada distribución de probabilidad, esta distribución puede estar completamente especificada o perteneciente a una clase paramétrica.Para la bondad de ajuste de los datos a una distribución fija dada, los contrastes básicos son el $\chi^2$ de Pearson y el de Kolmogorov-smirnov.
+~\\Las pruebas de bondad de ajuste tienen por objetivo determinar si los datos se ajustan a una determinada distribución de probabilidad; esta distribución puede estar completamente especificada o puede pertenecer a una clase paramétrica. Para la bondad de ajuste de los datos a una distribución fija dada, los contrastes básicos son el $\chi^2$ de Pearson y el de Kolmogorov - Smirnov.
+
 \subsubsection*{Prueba $\chi^2$ de Pearson:}
 ~\\ \textbf{Esta prueba plantea las hipotesis:}
 $$H_{0}:f(x,\theta)=f_{0}(x,\theta)$$
@@ -173,8 +177,7 @@ $$H_{1}:f(x,\theta)\neq f_{0}(x,\theta) $$
 ~\\ \textbf{La regla de decisión esta dada por:} Para un nivel de significancia de $\alpha$ se halla el valor $\chi_{1-\alpha,k-1}^{2}$ a partir de $P(\chi^{2}>\chi_{1-\alpha,k-m-1}^{2})=\alpha$
 ~\\Si $\chi_{Obs}^{2}>\chi_{1-\alpha,k-1}^{2}$ se rechaza la hipótesis nula $H_{0}$
 \subsubsection*{Prueba Kolmogorov-Smirnov:}
-~\\Esta prueba, al igual que la anterior, sirve para probar si una muestra o un conjunto de datos tienen o siguen una distribución hipotetica.
-~\\Se plantean las siguientes hipótesis:
+~\\Esta prueba, al igual que la anterior, sirve para probar si una muestra o un conjunto de datos tienen o siguen una distribución hipotética. Se plantean las siguientes hipótesis:
 $$H_{0}: F(x,\theta)=F_{0}(x,\theta) $$ 
 $$H_{1}: F(x,\theta)\neq F_{0}(x,\theta)  $$
 ~\\ \textbf{Estadístico de prueba:}Sea $F_{n}(x)$ la función de distribución empirica basada en las muestra aleatoria $x_{1},x_{2},...,x_{n}$, el estadistico de prueba para la hipotesis planteada es:
@@ -183,10 +186,9 @@ $$T=sup|F_{n}(x)-F_{0}(x)|$$
 
 \subsection{Simulación de las observaciones:}
 \subsubsection{Distribución Poisson:}
-~\\Recordemos que el parámetro sobre el cuál se van a generar las observaciones es $\lambda=1.99$ que es la tasa o el número esperado de movimientos sísmicos durante un año. La generación de estos números se hizo por el método de
+~\\Es importante recordar que el parámetro sobre el cuál se van a generar las observaciones es  $\lambda=1.99$ , el cual corresponde a la tasa o el número esperado de movimientos sísmicos durante un año. La generación de estos números se hizo por el método propio de la distribución a partir de la generación de distribuciones exponenciales y por medio del comando rpois del software estadístico R.
 \subsubsection{Distribución Logística:}
-~\\Con esta distribución, se buscó generar las probabilidades de ser un buen cliente dadas unas características (variables independientes del modelo) de cada una de las 14000 personas en cuestión, es decir, se generaron 14000 valores entre 0 y 1 que representan tales probabilidades.
-
+~\\Con esta distribución se buscó generar las probabilidades de ser un buen cliente dadas unas características (variables independientes del modelo) de cada una de las 14000 personas en cuestión, es decir, se generaron 14000 valores entre 0 y 1 que representan tales probabilidades.
 
 
 \subsection{Resultados}
@@ -210,8 +212,14 @@ $$T=sup|F_{n}(x)-F_{0}(x)|$$
 \subsection{Conclusiones}
 \subsection{Bibliografía}
 
+~\begin{itemize}
+\item\textbf {Statistical distributions, Catherine Forbes, Merran Evans, Nicholas Hastings, Brian Peacock, Fourth edition}
 
+\item\textbf {http://www.redalyc.org/html/750/75040605/}
 
+\item\textbf {https://www.sciencedirect.com.bd.univalle.edu.co}
+
+\end{itemize}
 
 
 \nocite{Behar}
