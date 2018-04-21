@@ -1,3 +1,4 @@
+
 % -------------------------------------------------------------------------------------
 % Plantilla de un artículo para publicar en la Revista Colombiana de Estadística
 % *************************************************************************************
@@ -6,7 +7,9 @@
 % utilizar otro idioma, cambiar el comando "\documentclass{revcoles}" por el comando
 % "\documentclass[english]{revcoles}" o por "\documentclass[portuguese]{revcoles}"
 % **** --------------------------------------------------------------------------------
-\documentclass[report,oneside]{revcoles}
+\documentclass[10pt,report,oneside]{revcoles}
+\usepackage{anysize}
+\marginsize{1cm}{1cm}{1cm}{1cm}
 \labeldocument[
 university = Universidad del Valle,
 faculty = Facultad de Ingeniería,
@@ -39,7 +42,6 @@ year = 2018]
 \hyphenation{Colombia mul-ti-va-ria-do pro-ba-bi-li-dad es-ta-dís-ti-ca}
 % //// --------------------------------------------------------------------------------
 \begin{document}
-
 % -------------------------------------------------------------------------------------
 % Espacio reservado para ingresar el título del artículo
 % "maintitle = " título original del artículo
@@ -187,14 +189,23 @@ $$T=sup|F_{n}(x)-F_{0}(x)|$$
 
 
 
-\newpage\subsection{Resultados}
+\subsection{Resultados}
+\subsubsection{Distribucción Poisson:}
 \begin{figure}[!htb]
   \centering
-  \includegraphics[scale=0.35]{FigurasUV/Rplot1.png}
+  \includegraphics[scale=0.3]{FigurasUV/Rplot1.png}
   \caption{Comparación simulaciones en R y con el método propio de la distribución Poisson($\lambda=1.99$)}\label{figura1}
 \end{figure}
-~\\ 
+\subsubsection*{Prueba de bondad de ajuste $\chi^2$ de Pearson:}
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[scale=0.3]{FigurasUV/poisson.png}
+  \caption{Frecuencia esperada vs observada de la distribución Poisson$(\lambda=1.99)$}\label{figura1}
+\end{figure}
+~\\ El estadistico de prueba de la prueba $\chi^2$ de Pearson nos dio $\chi_{obs}^{2}=\sum\limits_{i=1}^{k}\frac{(O_{i}-E_{i})^2}{E_{i}}=0.001783335$ y el $p-valor=P(\chi^{2}_{k-1}>\chi^{2}_{obs})=P(\chi^{2}_{9}>0.00178335)=1$. Por lo tanto, no rechazamos $H_{0}$ y concluimos que los datos generados por el método de la transformada inversa se distribuyen Poisson$(\lambda=1.99)$, esto quiere decir que el método de generación de datos utilizado realmente funciona.
 
+\newpage\subsubsection{Distribucion Logistica:}
+\subsubsection*{Prueba de bondad de ajuste Kolmogorov-Smirnov:}
 
 \subsection{Conclusiones}
 \subsection{Bibliografía}

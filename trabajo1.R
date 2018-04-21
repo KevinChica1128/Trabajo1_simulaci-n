@@ -28,6 +28,23 @@ for (j in 1:N) {
   X[j]=i
 }
 
+#Pruebas de bondad de ajuste:
+Z<-table(X)
+obs<-Z/length(X)  #Observado
+prob<-dpois(seq(0,9),1.99) #Esperado
+#Gráfica comparativa:
+x11()
+plot(obs,main="Gráfica frecuencia observada y esperada, distribucción Poisson(1.99)")
+points(seq(0,9),prob)
+
+#Prueba de bondad de ajuste chi cuadrado:
+est<-sum((obs-prob)^2/prob)  #Estadistico de prueba
+valorp<-1-pchisq(est,9)
+qchisq(0.95,8)   #Valor critico
+pchisq(est,9,lower.tail = F) #Otra forma de sacar la probabilidad mayor que.
+
+#Prueba de R:
+
 #Grafico#
 x11()
 par(mfrow=c(1,2))
