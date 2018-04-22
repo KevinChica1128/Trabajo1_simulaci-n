@@ -34,8 +34,8 @@ obs<-Z/length(X)  #Observado
 prob<-dpois(seq(0,9),1.99) #Esperado
 #Gr?fica comparativa:
 x11()
-plot(obs,main="Gr?fica frecuencia observada y esperada, distribucci?n Poisson(1.99)")
-points(seq(0,9),prob)
+plot(obs,main="Grafica frecuencia observada y esperada, distribuccion Poisson(1.99)")
+points(seq(0,9),prob, col="blue", pch=16)
 
 #Prueba de bondad de ajuste chi cuadrado:
 est<-sum((obs-prob)^2/prob)  #Estadistico de prueba
@@ -46,13 +46,13 @@ pchisq(est,9,lower.tail = F) #Otra forma de sacar la probabilidad mayor que.
 #Prueba de R:
 
 #Grafico#
-x11()
-par(mfrow=c(1,2))
-barplot(table(RP), main="Poisson(1.99) en R", xlab="Magnitud", ylab="")
-barplot(table(X), main="Poisson(1.99) con el metodo propio", xlab="Magnitud", ylab="")
+plot(table(RP), main="Poisson para Lambda = 1.99 ", xlab="Frecuencia de terremotos", ylab="Simulaciones")
+points(seq(0,9), table(X), pch=16, col="red")
+legend("topright",legend=c("Metodo Tradicional R","Metodo Transformada Inversa"), 
+       pch=c(16, 16),col=c("black","red"), bty="n", cex=1.2)
 
-qplot(RP,main="Poisson(1.99) en R, tasa media terremotos", col=I("black"), fill=I("grey"))
-qplot(X,main="Poisson(1.99) con el metodo propio, tasa media terremotos", col=I("black"), fill=I("grey"))
+#plot(table(X), main="Poisson(1.99) con el metodo propio", xlab="Magnitud", ylab="")
+
 
 #-----------------------------------#
 #Distribucion Logistic:
@@ -66,13 +66,13 @@ a=0
 b=2
 U <- runif(nsim2,0,1)
 X = a + b*log((U)/(1-U))
+l=seq(-20,20, by=0.001)
 
 #Grafico#
-x11()
-par(mfrow=c(1,2))
-hist((L), main="Logistica(0,2) en R", freq=F, col="grey", bty="n")
-hist((X), main="Logistica(0,2) método de la transformada inversa", freq=F, col="grey", bty="n") 
-
+hist((X), main="Distribucion Logistica de parametro (0,2)", freq=F, col="grey", bty="n")
+lines(l, dlogis(l,0,2), lwd=2, col="red")
+legend("topleft",legend=c("Metodo Transformada Inversa","Metodo Tradicional R"), 
+       pch=c("-,-"),col=c("black","red"), lty=1,2, bty="n")
 
 #Generacion variable de respuesta Y:
 Y<-c(rep(0,7000),rep(1,7000)) # 0:Clientes malos, 1:Clientes buenos

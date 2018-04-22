@@ -156,6 +156,8 @@ Sobre la base de un cálculo de referencia, el análisis muestra un buen acuerdo e
 \subsection{Introducción}
 ~\\En esta sección se evidencian los resultados de las simulaciones de los artículos referenciados en el numeral 1 del presente documento, donde: la distribución Poisson fue simulada por medio del método propio y la distribución Logística se simuló por medio de la transformada inversa. Se comparó si los métodos de simulación de verdad simulaban las variables aleatorias deseadas, esto mediante método gráfico y haciendo uso de pruebas estadísticas de bondad de ajuste como la kolmogorov y la $\chi^2$. Posteriormente, se concluye acerca de los métodos de simulación usados teniendo en cuenta los resultados de la prueba y el contexto en el que se utiliza la distribución en los artículos seleccionados.
 
+
+\pagebreak
 \subsection{Descripción general de las distribuciones y las pruebas de bondad de ajuste utilizadas}
 \subsubsection{Distribución Poisson}
 ~\\  Esta distribución es una de las más importantes distribuciones de variable discreta. Sus principales aplicaciones hacen referencia a la modelización de situaciones en las que interesa determinar el número de hechos de cierto tipo que se pueden producir en un intervalo de tiempo o de espacio, bajo presupuestos de aleatoriedad. Su función de densidad está dada por: 
@@ -190,20 +192,20 @@ $$T=sup|F_{n}(x)-F_{0}(x)|$$
 \subsubsection{Distribución Poisson:}
 ~\\Es importante recordar que el parámetro sobre el cuál se van a generar las observaciones es  $\lambda=1.99$ , el cual corresponde a la tasa o el número esperado de movimientos sísmicos durante un año. La generación de estos números se hizo por el método propio de la distribución a partir de la generación de distribuciones exponenciales y por medio del comando rpois del software estadístico R.
 \subsubsection{Distribución Logística:}
-~\\Con esta distribución se buscó generar las probabilidades de ser un buen cliente dadas unas características (variables independientes del modelo) de cada una de las 14000 personas en cuestión, es decir, se generaron 14000 valores entre 0 y 1 que representan tales probabilidades.
+~\\Con esta distribución se buscó generar las probabilidades de ser un buen cliente dadas unas características (variables independientes del modelo) de cada una de las 14000 personas en cuestión, es decir, se generaron 14000 valores entre 0 y 2 que representan tales probabilidades.
 
 
 \subsection{Resultados}
 \subsubsection{Distribucción Poisson:}
 \begin{figure}[!htb]
   \centering
-  \includegraphics[scale=0.3]{FigurasUV/Rplot1.png}
+  \includegraphics[scale=0.4]{FigurasUV/Rplot1.png}
   \caption{Comparación simulaciones en R y con el método propio de la distribución Poisson($\lambda=1.99$)}\label{figura1}
 \end{figure}
 \subsubsection*{Prueba de bondad de ajuste $\chi^2$ de Pearson:}
 \begin{figure}[!htb]
   \centering
-  \includegraphics[scale=0.3]{FigurasUV/poisson.png}
+  \includegraphics[scale=0.4]{FigurasUV/poisson.png}
   \caption{Frecuencia esperada vs observada de la distribución Poisson$(\lambda=1.99)$}\label{figura1}
 \end{figure}
 ~\\ El estadistico de prueba de la prueba $\chi^2$ de Pearson nos dio $\chi_{obs}^{2}=\sum\limits_{i=1}^{k}\frac{(O_{i}-E_{i})^2}{E_{i}}=0.001783335$ y el $p-valor=P(\chi^{2}_{k-1}>\chi^{2}_{obs})=P(\chi^{2}_{9}>0.00178335)=1$. Por lo tanto, no rechazamos $H_{0}$ y concluimos que los datos generados por el método de la transformada inversa se distribuyen Poisson$(\lambda=1.99)$, esto quiere decir que el método de generación de datos utilizado realmente funciona.
@@ -211,19 +213,16 @@ $$T=sup|F_{n}(x)-F_{0}(x)|$$
 \subsubsection{Distribucion Logistica:}
 \begin{figure}[!htb]
   \centering
-  \includegraphics[scale=0.3]{FigurasUV/logistic.png}
+  \includegraphics[scale=0.4]{FigurasUV/logic.png}
   \caption{Comparación simulaciones en R y con el método de la transformada inversa para la distribución Logistica($a=0,b=2$)}\label{figura2}
 \end{figure}
 \subsubsection*{Prueba de bondad de ajuste Kolmogorov-Smirnov:}
 
 \subsection{Conclusiones}
 \subsection{Bibliografía}
-
 ~\begin{itemize}
 \item\textbf {Statistical distributions, Catherine Forbes, Merran Evans, Nicholas Hastings, Brian Peacock, Fourth edition}
-
 \item\textbf {http://www.redalyc.org/html/750/75040605/}
-
 \item\textbf {https://www.sciencedirect.com.bd.univalle.edu.co}
 
 \end{itemize}
