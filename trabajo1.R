@@ -59,19 +59,19 @@ qplot(X,main="Poisson(1.99) con el metodo propio, tasa media terremotos", col=I(
 #-----------------------------------#
 nsim2=14000
 # M. tradicional #
-L <- rlogis(nsim2, 100,16)
+L <- rlogis(nsim2, 0,2)
 
 # Transformada Inversa #
 a=0
-b=1
+b=2
 U <- runif(nsim2,0,1)
 X = a + b*log((U)/(1-U))
 
 #Grafico#
 x11()
 par(mfrow=c(1,2))
-hist((L), main="Logic Tradicional", freq=F, col="grey", bty="n")
-hist((X), main="Logic Transformacion", freq=F, col="grey", bty="n") 
+hist((L), main="Logistica(0,2) en R", freq=F, col="grey", bty="n")
+hist((X), main="Logistica(0,2) método de la transformada inversa", freq=F, col="grey", bty="n") 
 
 
 #Generacion variable de respuesta Y:

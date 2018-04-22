@@ -164,7 +164,9 @@ Sobre la base de un cálculo de referencia, el análisis muestra un buen acuerdo e
 ~\\En este caso, el artículo trata de modelar el riesgo sísmico en un año y por tanto se plantea esta distribución para modelar el fenómeno, ya que se trata de determinar el número de hechos de cierto tipo (en este caso de movimientos de tierra) que se producen en un intervalo de tiempo o de espacio (en este caso es acotado por un año).
 
 \subsubsection{Distribución Logística}
-
+~\\La función de distribución de la logística se utiliza como modelo de crecimiento. Por ejemplo, con un nuevo producto a menudo encontramos que el crecimiento es inicialmente lento, entonces gana impulso, y finalmente se ralentiza cuando el mercado está saturado o se alcanza alguna forma de equilibrio. Esta distribución tiene uso en los modelos logit, ya que estos modelos trabajan con su función de distribución acumulada denominada función logistica, por la simpleza de esta para encontrar probabilidades. Su función de distribución acumulada está dada por:
+$$F(x,a,b)=\frac{1}{1+e^-(\frac{x-a}{b})}$$
+~\\En este caso, el articulo trata de modelar las probabilidades de ser un buen cliente dadas 28 características o variables independientes (como sexo, estado civil, etc.), por medio del modelo logit.
 \subsubsection{Pruebas de bondad de ajuste}
 ~\\Las pruebas de bondad de ajuste tienen por objetivo determinar si los datos se ajustan a una determinada distribución de probabilidad; esta distribución puede estar completamente especificada o puede pertenecer a una clase paramétrica. Para la bondad de ajuste de los datos a una distribución fija dada, los contrastes básicos son el $\chi^2$ de Pearson y el de Kolmogorov - Smirnov.
 
@@ -206,7 +208,12 @@ $$T=sup|F_{n}(x)-F_{0}(x)|$$
 \end{figure}
 ~\\ El estadistico de prueba de la prueba $\chi^2$ de Pearson nos dio $\chi_{obs}^{2}=\sum\limits_{i=1}^{k}\frac{(O_{i}-E_{i})^2}{E_{i}}=0.001783335$ y el $p-valor=P(\chi^{2}_{k-1}>\chi^{2}_{obs})=P(\chi^{2}_{9}>0.00178335)=1$. Por lo tanto, no rechazamos $H_{0}$ y concluimos que los datos generados por el método de la transformada inversa se distribuyen Poisson$(\lambda=1.99)$, esto quiere decir que el método de generación de datos utilizado realmente funciona.
 
-\newpage\subsubsection{Distribucion Logistica:}
+\subsubsection{Distribucion Logistica:}
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[scale=0.3]{FigurasUV/logistic.png}
+  \caption{Comparación simulaciones en R y con el método de la transformada inversa para la distribución Logistica($a=0,b=2$)}\label{figura2}
+\end{figure}
 \subsubsection*{Prueba de bondad de ajuste Kolmogorov-Smirnov:}
 
 \subsection{Conclusiones}
