@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 APR 2018 14:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  22 APR 2018 17:51
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **"Trabajo1 Informe.tex"
 (./Trabajo1 Informe.tex
@@ -432,23 +431,10 @@ Package pdftex.def Info: FigurasUV/poisson.png used on input line 208.
 File: FigurasUV/logic.png Graphic file (type png)
 
 <use FigurasUV/logic.png>
-Package pdftex.def Info: FigurasUV/logic.png used on input line 217.
+Package pdftex.def Info: FigurasUV/logic.png used on input line 216.
 (pdftex.def)             Requested size: 394.266pt x 216.40466pt.
- [5 <./FigurasUV/poisson.png> <./FigurasUV/logic.png>]
-
-LaTeX Warning: Citation 'Behar' on page 6 undefined on input line 232.
-
-
-LaTeX Warning: Citation 'supuestos' on page 6 undefined on input line 233.
-
-
-LaTeX Warning: Citation 'Reg' on page 6 undefined on input line 234.
-
-
-LaTeX Warning: Citation 'F' on page 6 undefined on input line 235.
-
-No file "Trabajo1 Informe".bbl.
-[6] (./Trabajo1 Informe.aux
+ [5 <./FigurasUV/poisson.png> <./FigurasUV/logic.png>] (./Trabajo1 Informe.bbl)
+ [6] (./Trabajo1 Informe.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
@@ -457,11 +443,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5351 strings out of 492995
- 74946 string characters out of 6132704
- 153806 words of memory out of 5000000
- 8784 multiletter control sequences out of 15000+600000
- 21115 words of font info for 60 fonts, out of 8000000 for 9000
+ 5373 strings out of 492995
+ 75238 string characters out of 6132704
+ 153992 words of memory out of 5000000
+ 8803 multiletter control sequences out of 15000+600000
+ 21801 words of font info for 61 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  43i,8n,40p,1362b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -487,11 +473,12 @@ fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2017/texmf-dist/fo
 nts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2017/texmf-dist/font
 s/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2017/texmf-dist/fonts/
 type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
-pe1/public/cm-super/sfti0900.pfb>
-Output written on "Trabajo1 Informe.pdf" (6 pages, 392554 bytes).
+pe1/public/cm-super/sfti0900.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
+1/public/cm-super/sfti1000.pfb>
+Output written on "Trabajo1 Informe.pdf" (6 pages, 420523 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 127 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
