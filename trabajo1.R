@@ -32,9 +32,9 @@ for (j in 1:N) {
 Z<-table(X)
 obs<-Z/length(X)  #Observado
 prob<-dpois(seq(0,9),1.99) #Esperado
-#Gráfica comparativa:
+#Gr?fica comparativa:
 x11()
-plot(obs,main="Gráfica frecuencia observada y esperada, distribucción Poisson(1.99)")
+plot(obs,main="Gr?fica frecuencia observada y esperada, distribucci?n Poisson(1.99)")
 points(seq(0,9),prob)
 
 #Prueba de bondad de ajuste chi cuadrado:
@@ -57,29 +57,42 @@ qplot(X,main="Poisson(1.99) con el metodo propio, tasa media terremotos", col=I(
 #-----------------------------------#
 #Distribucion Logistic:
 #-----------------------------------#
+nsim2=14000
 # M. tradicional #
-L <- rlogis(nsim, 3,4)
+L <- rlogis(nsim2, 100,16)
 
 # Transformada Inversa #
-a=3
-b=4
-U <- runif(nsim,0,1)
+a=0
+b=1
+U <- runif(nsim2,0,1)
 X = a + b*log((U)/(1-U))
-
-datos <- data.frame(L,X)
-
-#Grafico#
-qplot(L, main="Distribucion Logistica", col=I("black"), fill=I("grey")) 
-qplot(X, main="Transformacion Distribucion Logistica", col=I("black"), fill=I("grey"))
-
 
 #Grafico#
 x11()
 par(mfrow=c(1,2))
-hist((L), main="Logic Tradicional", freq=F, xlab="", yalb="", col="magenta1", bty="n")
-hist((X), main="Logic Transformacion", freq=F, xlab="", yalb="", col="purple1", bty="n") 
+hist((L), main="Logic Tradicional", freq=F, col="grey", bty="n")
+hist((X), main="Logic Transformacion", freq=F, col="grey", bty="n") 
 
 
 #Generacion variable de respuesta Y:
 Y<-c(rep(0,7000),rep(1,7000)) # 0:Clientes malos, 1:Clientes buenos
+
+# Tabla de frecuencias
+dat1 = L
+n.cl=8
+puntos = min(dat1)+(0:n.cl)*(max(dat1)-min(dat1))/n.cl
+T1 = table(cut(dat1, breaks=puntos))
+plot(T1)
+
+dat2 = X
+n.cl=8
+puntos = min(dat)+(0:n.cl)*(max(dat2)-min(dat2))/n.cl
+T2 = table(cut(dat2, breaks=puntos))
+plot(T2)
+
+
+
+
+
+
 
