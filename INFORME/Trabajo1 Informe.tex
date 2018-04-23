@@ -193,24 +193,23 @@ $$T=sup|F_{n}(x)-F_{0}(x)|$$
 \subsubsection{Distribución Poisson:}
 ~\\Es importante recordar que el parámetro sobre el cuál se van a generar las observaciones es  $\lambda=1.99$ , el cual corresponde a la tasa o el número esperado de movimientos sísmicos durante un año. La generación de estos números se hizo por el método propio de la distribución a partir de la generación de distribuciones exponenciales y por medio del comando rpois del software estadístico R.
 \subsubsection{Distribución Logística:}
-~\\Con esta distribución se buscó generar las probabilidades de ser un buen cliente dadas unas características (variables independientes del modelo) de cada una de las 14000 personas en cuestión, es decir, se generaron 14000 valores entre 0 y 2 que representan tales probabilidades.
+~\\El uso de esta distribución en la problemática del articulo es una función derivada de ella, es decir, no se usa directamente la función de densidad logística para describir el fenómeno, se usa su función de distribución acumulada, denominada también función logística. Por lo cuál, en este caso no fue posible extraer unos parámetros como tal del articulo para simular los datos, es decir, no se logro darle sentido real a los parámetros con los cuales se van a generar los datos. Teniendo en cuenta lo anterior, se generaron 14000 datos con distribución Logística($a=0,b=2$) para mostrar la efectividad del método generador aplicado y para mostrar los resultados de la prueba de bondad de ajuste. 
 
 
 \subsection{Resultados}
 \subsubsection{Distribucción Poisson:}
 \begin{figure}[!htb]
   \centering
-  \includegraphics[scale=0.4]{FigurasUV/Rplot1.png}
+  \includegraphics[scale=0.37]{FigurasUV/Rplot1.png}
   \caption{Comparación simulaciones en R y con el método propio de la distribución Poisson($\lambda=1.99$)}\label{figura1}
 \end{figure}
+~\\En esta gráfica se puede observar como los valores obtenidos por el generador de R son casi identicos a los valores obtenidos por el generador propio de la distribución Poisson, por lo cuál se espera que la prueba de bondad de ajuste arroje que la distribución de los datos generados por el método propio de la Poisson realmente sigue una distribución Poisson($\lambda=1.99$)
 \subsubsection*{Prueba de bondad de ajuste $\chi^2$ de Pearson:}
 %\begin{figure}[!htb]
 %  \centering
 %  \includegraphics[scale=0.4]{FigurasUV/poisson.png}
 %  \caption{Frecuencia esperada vs observada de la distribución Poisson$(\lambda=1.99)$}\label{figura1}
 %\end{figure}
-~\\ El estadistico de prueba de la prueba $\chi^2$ de Pearson nos dio $\chi_{obs}^{2}=\sum\limits_{i=1}^{k}\frac{(O_{i}-E_{i})^2}{E_{i}}=0.00183335$  ~\\ El $p-valor=P(\chi^{2}_{k-1}>\chi^{2}_{obs})=P(\chi^{2}_{9}>0.00178335)=1$. ~\\Por lo tanto, no rechazamos $H_{0}$ y concluimos que los datos generados por el método de la transformada inversa se distribuyen Poisson$(\lambda=1.99)$, esto quiere decir que el método de generación de datos utilizado realmente funciona.
-
 \begin{center}
 	\begin{tabular}{|c|c|c|c|c|}
 		\hline 
@@ -238,26 +237,33 @@ $$T=sup|F_{n}(x)-F_{0}(x)|$$
 		\hline 
 	\end{tabular} 
 \end{center}
-
 ~\\ \textbf{Lo que nos permite obtener un valor total de 0.0015792 para un $\chi^2=0.0015792$} 
-
+~\\ El estadístico de prueba de la prueba $\chi^2$ de Pearson nos dio $\chi_{obs}^{2}=\sum\limits_{i=1}^{k}\frac{(O_{i}-E_{i})^2}{E_{i}}=0.0015792$  
+~\\ El cuantil $\chi^2_{0.95,8}=2.7326$ es mucho mayor que el estadistico de prueba obtenido $\chi^2_{obs}=0.0015792$ por lo tanto no se rechaza $H_{0}$
+~\\ El $p-valor=P(\chi^{2}_{k-m-1}>\chi^{2}_{obs})=P(\chi^{2}_{8}>0.0015792)=1$. 
+~\\Por lo tanto, no rechazamos $H_{0}$ y concluimos que los datos generados por el método de la transformada inversa se distribuyen Poisson$(\lambda=1.99$, esto quiere decir que el método de generación de datos utilizado realmente funciona.
 \subsubsection{Distribucion Logistica:}
-\begin{figure}
+\begin{figure}[h]
   \centering
-  \includegraphics[scale=0.4]{FigurasUV/logic.png}
+  \includegraphics[scale=0.4]{FigurasUV/Logic.png}
   \caption{Comparación simulaciones en R y con el método de la transformada inversa para la distribución Logistica($a=0,b=2$)}\label{figura2}
 \end{figure}
 
-\subsubsection*{Prueba de bondad de ajuste Kolmogorov-Smirnov:}
-\begin{figure}[!htb]
+~\\en esta gráfica se puede ver claramente como el histograma de los datos generados por el método de la transformada inversa de la distribución Logistica muestra un comportamiento que sigue realmente la distribución esperada. La curva roja es la densidad teorica Logistica y vemos claramente se adapta al histograma generado. Por lo cuál, al igual que en la Poisson, esperamos que la prueba de bondad de ajuste no nos rechace $H_{0}$ concluyendo que realmente siguen una distribución Logistica.
+
+\newpage\subsubsection*{Prueba de bondad de ajuste Kolmogorov-Smirnov:}
+\begin{figure}[h]
   \centering
-  \includegraphics[scale=1]{FigurasUV/k.png}
+  \includegraphics[scale=0.8]{FigurasUV/k.png}
   \caption{Resultados prueba de Kolmogorov para los valores generados con el método de la transformada inversa para la Logistic($a=0,b=2$)}\label{figura1}
 \end{figure}
 
-\pagebreak
+~\\En los resultados anteriores, se puede observar un p-valor de 0.9147, el cuál es demasiado grande. Lo cuál nos lleva a no rechazar $H_{0}$ y concluir que los datos generados por el método de la transformada inversa de la Logística, realmente siguen dicha distribución.
 \subsection{Conclusiones}
-~\\ Se puede concluir como 
+\begin{itemize}
+\item Se puede concluir que estas distribuciones tienen un uso muy importante en problemas sociales y económicos de gran tamaño. Por un lado, la distribución Poisson se utilizó para tratar de modelar y mitigar el riesgo sísmico (completar conclusión del articulo). Por otro lado, la distribución Logistic se usó para predecir u obtener la probabilidad por medio de un modelo logit, de que un cliente sea buen o mal pagador en cuanto a sus créditos personales dadas ciertas características, esto es muy importante en las empresas financieras, ya que con tan solo unas pocas preguntas personales al cliente, pueden obtener dicha probabilidad logrando disminuir considerablemente los riesgos crediticios, evitando así generar inmensas perdidas en la empresa.
+\item Con respecto a los métodos de simulación y pruebas de bondad de ajuste utilizadas, podemos ver que tanto el método utilizado para la distribución Poisson (método propio) como para la Logística (método de la transformada inversa) son muy acertados como generadores de variables aleatorias, ya que generan casi identicamente datos que siguen dichas distribuciones, y esto se ve apoyado con las pruebas de bondad de ajuste utilizadas, ya que ambas se nos rechazan por mucho, es decir, los datos generados muestran demasiada evidencia de que siguen las distribuciones hipotéticas.
+\end{itemize}
 \subsection{Bibliografía}
 ~\begin{itemize}
 \item\textbf {Statistical distributions, Catherine Forbes, Merran Evans, Nicholas Hastings, Brian Peacock, Fourth edition.}
@@ -267,10 +273,7 @@ $$T=sup|F_{n}(x)-F_{0}(x)|$$
 \end{itemize}
 
 
-\nocite{Behar}
-\nocite{supuestos}
-\nocite{Reg}
-\nocite{F}
+
 % //// --------------------------------------------------------------------------------
 % -------------------------------------------------------------------------------------
 % Fin del cuerpo del documento
@@ -280,7 +283,6 @@ $$T=sup|F_{n}(x)-F_{0}(x)|$$
 % las referencias bibliográficas del artículo utilizando el estilo bibliográfico BibTeX
 % "\referencias{.}"
 % **** --------------------------------------------------------------------------------
-\bibliography{references}
 % //// --------------------------------------------------------------------------------
 % //// --------------------------------------------------------------------------------
     \appendix% !no modificar esta línea¡

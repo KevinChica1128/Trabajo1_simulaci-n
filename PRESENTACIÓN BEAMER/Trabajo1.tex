@@ -79,6 +79,26 @@
 \end{figure}
 \end{frame}
 
+\begin{frame}
+\frametitle{Simulación Pruebas de bondad de ajuste}
+\begin{tabular}{cccc}
+\hline 
+OBSERVACIÓN & OBS & ESP & $(OBS-ESP)^2/ESP$ \\  
+0 & 0.1404 & 0.1367 & 0.000100 \\  
+1 & 0.2733 & 0.2720 & 0.000006 \\  
+2 & 0.2617 & 0.2706 & 0.000292 \\  
+3 & 0.1761 & 0.1795 & 0.000064 \\  
+4 & 0.0933 & 0.0893 & 0.000179 \\ 
+5 & 0.0390 & 0.0355 & 0.000345 \\  
+6 & 0.0125 & 0.0118 & 0.000041 \\  
+7 & 0.0033 & 0.0033 & 0 \\  
+8 & 0.0002 & 0.0008 & 0.00045 \\  
+9 & 0.0002 & 0.0001 & 0.0001 \\ 
+\hline 
+\end{tabular} 
+~\\ El estadístico de prueba de la prueba $\chi^2$ de Pearson nos dio $\chi_{obs}^{2}=\sum\limits_{i=1}^{k}\frac{(O_{i}-E_{i})^2}{E_{i}}=0.0015792$  
+~\\ El $p-valor=P(\chi^{2}_{k-m-1}>\chi^{2}_{obs})=P(\chi^{2}_{8}>0.0015792)=1$.
+\end{frame}
 
 \begin{frame}
 \frametitle{Simulación Pruebas de bondad de ajuste}
@@ -96,11 +116,14 @@
 \begin{frame}
 \frametitle{Conclusiones}
 \begin{itemize}
-\item{}
-\item{}
-\item{}
-\item{}
-\item{}
+\item Se puede concluir que estas distribuciones tienen un uso muy importante en problemas sociales y económicos de gran tamaño. Por un lado, la distribución Poisson se utilizó para tratar de modelar y mitigar el riesgo sísmico (completar conclusión del articulo). Por otro lado, la distribución Logistic se usó para predecir u obtener la probabilidad por medio de un modelo logit, de que un cliente sea buen o mal pagador en cuanto a sus créditos personales dadas ciertas características, esto es muy importante en las empresas financieras, ya que con tan solo unas pocas preguntas personales al cliente, pueden obtener dicha probabilidad logrando disminuir considerablemente los riesgos crediticios, evitando así generar inmensas perdidas en la empresa.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Conclusiones}
+\begin{itemize}
+\item Con respecto a los métodos de simulación y pruebas de bondad de ajuste utilizadas, podemos ver que tanto el método utilizado para la distribución Poisson (método propio) como para la Logística (método de la transformada inversa) son muy acertados como generadores de variables aleatorias, ya que generan casi identicamente datos que siguen dichas distribuciones, y esto se ve apoyado con las pruebas de bondad de ajuste utilizadas, ya que ambas se nos rechazan por mucho, es decir, los datos generados muestran demasiada evidencia de que siguen las distribuciones hipotéticas.
 \end{itemize}
 \end{frame}
 
