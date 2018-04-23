@@ -31,10 +31,10 @@ for (j in 1:N) {
 #Pruebas de bondad de ajuste:
 Z<-table(X)
 obs<-Z/length(X)  #Observado
-prob<-dpois(seq(0,9),1.99) #Esperado
+prob<-round(dpois(seq(0,9),1.99),4) #Esperado
 #Gr?fica comparativa:
 x11()
-plot(obs,main="Grafica frecuencia observada y esperada, distribuccion Poisson(1.99)")
+plot(obs,main="Grafica frecuencia observada y esperada, distribuccion Poisson(1.99)", ylab="Frecuencia esperada")
 points(seq(0,9),prob, col="blue", pch=16)
 
 #Prueba de bondad de ajuste chi cuadrado:
@@ -43,6 +43,12 @@ valorp<-1-pchisq(est,9)
 qchisq(0.95,8)   #Valor critico
 pchisq(est,9,lower.tail = F) #Otra forma de sacar la probabilidad mayor que.
 
+#Grafico#
+plot(obs, type="h", lwd=15, col="black", main="Grafica frecuencia observada y esperada", Ylab="Valor Prueba de bondad de ajuste")
+points(seq(0,9),prob, lwd=2, col="green", type="h")
+legend("topright",legend=c("Observado","Esperado"), 
+       pch=c(19,19),col=c("green","black"), lty=1,2, bty="n", cex=1.5)
+
 #Prueba de R:
 
 #Grafico#
@@ -50,7 +56,6 @@ plot(table(RP), main="Poisson para Lambda = 1.99 ", xlab="Frecuencia de terremot
 points(seq(0,9), table(X), pch=16, col="red")
 legend("topright",legend=c("Metodo Tradicional R","Metodo Transformada Inversa"), 
        pch=c(16, 16),col=c("black","red"), bty="n", cex=1.2)
-
 #plot(table(X), main="Poisson(1.99) con el metodo propio", xlab="Magnitud", ylab="")
 
 
