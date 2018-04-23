@@ -1,0 +1,9 @@
+\frametitle{Anexos}
+\framesubtitle{Generadores de variables aleatorias}
+\begin{verbatim}
+Generador de variables aleatorias Logistic:
+a=0
+b=2
+U <- runif(nsim2,0,1)
+X = a + b*log((U)/(1-U))
+\end{verbatim}

@@ -137,4 +137,34 @@ OBSERVACIÓN & OBS & ESP & $(OBS-ESP)^2/ESP$ \\
 \end{block}
 \end{frame}
 
+\begin{frame}[fragile]
+\frametitle{Anexos}
+\framesubtitle{Generadores de variables aleatorias}
+\begin{verbatim}
+Generador variables aleatorias Poisson:
+N=nsim
+X<-c()
+for (j in 1:N) {
+  U<-runif(1)
+  i=0 ; F=P=exp(-l)
+  while (U>=F) {
+    P=(l/(i+1))*P
+    F=F+P
+    i=i+1
+  }
+  X[j]=i
+}
+\end{verbatim}
+\end{frame}
+\begin{frame}[fragile]
+\frametitle{Anexos}
+\framesubtitle{Generadores de variables aleatorias}
+\begin{verbatim}
+Generador de variables aleatorias Logistic:
+a=0
+b=2
+U <- runif(nsim2,0,1)
+X = a + b*log((U)/(1-U))
+\end{verbatim}
+\end{frame}
 \end{document}
