@@ -48,9 +48,9 @@ year = 2018]
 % "secondtitle = " título del artículo traducido al idioma alterno
 % "shorttitle = " título corto (opcional) para el encabezado
 % **** --------------------------------------------------------------------------------
-\title[maintitle ={GENERACION DE NUMEROS ALEATORIOS, MODELOS PROBABILISTICOS Y PRUEBAS DE BONDAD DE AJUSTE},
+\title[maintitle ={GENERACION DE NUMEROS ALEATORIOS, MODELOS PROBABILISTICOS Y PRUEBAS DE BONDAD DE AJUSTE.},
        %secondtitle = Template for report in a course,
-       shorttitle = Generacion de numeros aleatorios y pruebas de bondad]
+       shorttitle = Generacion de numeros aleatorios y pruebas de bondad de ajuste]
 % //// --------------------------------------------------------------------------------
 % -------------------------------------------------------------------------------------
 % Espacio reservado para ingresar el(los) autor(es) del artículo de forma individual.
@@ -176,10 +176,11 @@ $$F(x,a,b)=\frac{1}{1+e^-(\frac{x-a}{b})}$$
 ~\\ \textbf{Esta prueba plantea las hipotesis:}
 $$H_{0}:f(x,\theta)=f_{0}(x,\theta)$$
 $$H_{1}:f(x,\theta)\neq f_{0}(x,\theta) $$
-~\\ \textbf{El estadístico de prueba es:} $\chi_{obs}^{2}=\sum\limits_{i=1}^{k}\frac{(f_{i}-np_{i})^2}{np_{i}}=\sum\limits_{i=1}^{k}\frac{(O_{i}-E_{i})^2}{E_{i}}$
+~\\ \textbf{El estadístico de prueba es:} ~\\$\chi_{obs}^{2}=\sum\limits_{i=1}^{k}\frac{(f_{i}-np_{i})^2}{np_{i}}=\sum\limits_{i=1}^{k}\frac{(O_{i}-E_{i})^2}{E_{i}}$
 ~\\Si n $\infty$, $(np_{i}>5)$, es la verdadera distribución (sin parámetros desconocidos), tiene una distrinución Chi-Cuadrado con k-m-1 grados de libertad. Donde k:Número de categorías mutuamente excluyentes, y m: Número de parámetros del modelo o distribución.
-~\\ \textbf{La regla de decisión esta dada por:} Para un nivel de significancia de $\alpha$ se halla el valor $\chi_{1-\alpha,k-1}^{2}$ a partir de $P(\chi^{2}>\chi_{1-\alpha,k-m-1}^{2})=\alpha$
+~\\ \textbf{La regla de decisión esta dada por:} Para un nivel de significancia de $\alpha$ se halla el valor $\chi_{1-\alpha,k-1}^{2}$ a partir de ~\\$P(\chi^{2}>\chi_{1-\alpha,k-m-1}^{2})=\alpha$
 ~\\Si $\chi_{Obs}^{2}>\chi_{1-\alpha,k-1}^{2}$ se rechaza la hipótesis nula $H_{0}$
+
 \subsubsection*{Prueba Kolmogorov-Smirnov:}
 ~\\Esta prueba, al igual que la anterior, sirve para probar si una muestra o un conjunto de datos tienen o siguen una distribución hipotética. Se plantean las siguientes hipótesis:
 $$H_{0}: F(x,\theta)=F_{0}(x,\theta) $$ 
@@ -210,6 +211,37 @@ $$T=sup|F_{n}(x)-F_{0}(x)|$$
 \end{figure}
 ~\\ El estadistico de prueba de la prueba $\chi^2$ de Pearson nos dio $\chi_{obs}^{2}=\sum\limits_{i=1}^{k}\frac{(O_{i}-E_{i})^2}{E_{i}}=0.001783335$ y el $p-valor=P(\chi^{2}_{k-1}>\chi^{2}_{obs})=P(\chi^{2}_{9}>0.00178335)=1$. Por lo tanto, no rechazamos $H_{0}$ y concluimos que los datos generados por el método de la transformada inversa se distribuyen Poisson$(\lambda=1.99)$, esto quiere decir que el método de generación de datos utilizado realmente funciona.
 
+\begin{center}
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline 
+		\rule[-1ex]{0pt}{2.5ex}  observado &  Esperado & $(observado-esperado)^2/Esperado$\\ 
+		\hline 
+		\rule[-1ex]{0pt}{2.5ex}  0.1404 & 0.1367 & 0.000100 \\ 
+		\hline 
+		\rule[-1ex]{0pt}{2.5ex}  0.2733 & 0.2720 & 0.000006 \\ 
+	    \hline 
+		\rule[-1ex]{0pt}{2.5ex}  0.2617 & 0.2706 & 0.000292 \\
+	    \hline 
+		\rule[-1ex]{0pt}{2.5ex}  0.1761 & 0.1795 & 0.000064 \\
+		\hline 
+		\rule[-1ex]{0pt}{2.5ex}  0.0.933 & 0.0893 & 0.000179 \\
+		\hline 
+		\rule[-1ex]{0pt}{2.5ex}  0.0390 & 0.0355 & 0.000345 \\
+		\hline 
+		\rule[-1ex]{0pt}{2.5ex}  0.0125 & 0.0118 & 0.000041 \\
+		\hline 
+		\rule[-1ex]{0pt}{2.5ex}  0.0033 & 0.0033 & 0 \\
+		\hline 
+		\rule[-1ex]{0pt}{2.5ex}  0.0002 & 0.0008 & 0.00045 \\
+		\hline 
+		\rule[-1ex]{0pt}{2.5ex}  0.0002 & 0.0001 & 0.0001 \\
+		\hline 
+	\end{tabular} 
+\end{center}
+
+~\\ \textbf{Lo que nos permite obtener un valor total de 0.0015792 para un $\chi^2=0.0015792$} 
+
+\pagebreak
 \subsubsection{Distribucion Logistica:}
 \begin{figure}[!htb]
   \centering
@@ -222,7 +254,7 @@ $$T=sup|F_{n}(x)-F_{0}(x)|$$
 ~\\ Se puede concluir como 
 \subsection{Bibliografía}
 ~\begin{itemize}
-\item\textbf {Statistical distributions, Catherine Forbes, Merran Evans, Nicholas Hastings, Brian Peacock, Fourth edition}
+\item\textbf {Statistical distributions, Catherine Forbes, Merran Evans, Nicholas Hastings, Brian Peacock, Fourth edition.}
 \item\textbf {http://www.redalyc.org/html/750/75040605/}
 \item\textbf {https://www.sciencedirect.com.bd.univalle.edu.co}
 
