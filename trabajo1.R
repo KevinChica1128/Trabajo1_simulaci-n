@@ -35,7 +35,7 @@ prob<-round(dpois(seq(0,9),1.99),4) #Esperado
 #Gr?fica comparativa:
 x11()
 plot(obs,main="Grafica frecuencia observada y esperada, distribuccion Poisson(1.99)", ylab="Frecuencia esperada")
-points(seq(0,9),prob, col="blue", pch=16)
+points(seq(0,9),prob, col="blue", pch=16, lwd=3)
 
 #Prueba de bondad de ajuste chi cuadrado:
 est<-sum((obs-prob)^2/prob)  #Estadistico de prueba
@@ -44,9 +44,9 @@ qchisq(0.95,8)   #Valor critico
 pchisq(est,9,lower.tail = F) #Otra forma de sacar la probabilidad mayor que.
 
 #Grafico#
-plot(obs, type="h", lwd=15, col="black", main="Grafica frecuencia observada y esperada",
+plot(obs, type="h", lwd=18, col="black", main="Grafica frecuencia observada y esperada",
      xlab="Valor Prueba", Ylab="Valor Prueba de bondad de ajuste", bty="n")
-points(seq(0,9),prob, lwd=2, col="green", type="h")
+points(seq(0,9),prob, lwd=3, col="green", type="h")
 legend("topright",legend=c("Observado","Esperado"), 
        pch=c(19,19),col=c("green","black"), lty=1,2, bty="n", cex=1.5)
 
