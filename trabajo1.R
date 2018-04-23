@@ -69,6 +69,7 @@ X = a + b*log((U)/(1-U))
 l=seq(-20,20, by=0.001)
 
 #Grafico#
+x11()
 hist((X), main="Distribucion Logistica de parametro (0,2)", freq=F, col="grey", bty="n")
 lines(l, dlogis(l,0,2), lwd=2, col="red")
 legend("topleft",legend=c("Metodo Transformada Inversa","Metodo Tradicional R"), 
@@ -87,10 +88,11 @@ plot(T1)
 dat2 = X
 n.cl=8
 puntos = min(dat)+(0:n.cl)*(max(dat2)-min(dat2))/n.cl
-T2 = table(cut(dat2, breaks=puntos))
+T2 = table(cut(dat2, breaks=puntos,right = T))
 plot(T2)
 
-
+#Prueba de bondad de ajuste kolmogorov para la logistic:
+ks.test(X,'plogis',0,2)
 
 
 
