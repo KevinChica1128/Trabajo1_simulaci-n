@@ -276,14 +276,10 @@ $$T=sup|F_{n}(x)-F_{0}(x)|$$
 \pagebreak\section{Scripts}
 \begin{verbatim}
 #--------------------------------------------------------------#
-
 #Kevin Steven Garcia Chica - 1533173
 #Cesar A. Saavedra Vanegas - 1628466
 #Simulacion Estadistica  Trabajo 1
-
 #--------------------------------------------------------------#
-suppressMessages(library(ggplot2))
-
 #-----------------------------------#
 # Distribucion Poisson:
 #-----------------------------------#
@@ -337,7 +333,6 @@ points(seq(0,9), table(X), pch=16, col="red")
 legend("topright",legend=c("Metodo Tradicional R","Metodo Transformada Inversa"), 
        pch=c(16, 16),col=c("black","red"), bty="n", cex=1.2)
 #plot(table(X), main="Poisson(1.99) con el metodo propio", xlab="Magnitud", ylab="")
-
 
 #-----------------------------------#
 #Distribucion Logistic:
